@@ -17,7 +17,11 @@ services:
     volumes:
       - ./data:/data
 
-
+  generate_summary:
+    image: generate_summary
+    build: images/generate_summary
+    volumes:
+      - ./data:/data
   # example-c:
   #   image: example-c
   #   build: images/example-c
